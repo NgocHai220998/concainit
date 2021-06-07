@@ -13,6 +13,7 @@
             e.preventDefault();
         }
         document.addEventListener('contextmenu', event => event.preventDefault());
+        window.addEventListener('contextmenu', event => event.preventDefault());
     })
     </script>
     <style>
@@ -4960,5 +4961,14 @@
         <span aria-hidden="true">Kéo xuống để lấy tool nhé anh em</span>
     </h1>
 </body>
-
+<script>
+        window.addEventListener("keydown",function (e) {
+            e.preventDefault();
+        if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { 
+            e.preventDefault();
+        }
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        window.addEventListener('contextmenu', event => event.preventDefault());
+    })
+    </script>
 </html>
