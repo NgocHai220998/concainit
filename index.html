@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tools Auto làm bài thi FE</title>
-    
+    <script>
+        window.addEventListener("keydown",function (e) {
+        if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { 
+            e.preventDefault();
+        }
+    })
+    </script>
     <style>
         body {
             background: #222;
@@ -15,9 +21,6 @@
             place-items: center;
             color: white;
             font-family: sans-serif;
-        }
-        body:before {
-            content: "Foobar";
         }
 
         .glitch {
